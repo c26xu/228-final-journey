@@ -1,0 +1,153 @@
+<!--
+Clara Xu
+21007807
+-->
+
+<!DOCTYPE html>
+<html lang="eng-ca">
+  <head>
+    <title>Clara's Cats!: Home</title>
+    <meta charset="utc-8">
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000;
+        font-family: Franklin Gothic Medium, Courier, monospace;
+      }
+
+      h1 {
+        width: 100%;
+      }
+
+      #nav {
+        background-color: #FFF;
+        width: 100%;
+        padding-bottom: 25px;
+        display: flex;
+        float: center;
+        align-items: center;
+      }
+
+      #nav img {
+        float: left;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        margin-left: 40px;
+        font-family: Franklin Gothic Medium, Courier, monospace;
+        font-size: 24px;
+        text-align: right;
+
+      }
+
+      ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 25px;
+      }
+
+      ul li a {
+        color: #000000
+      }
+      
+      li a:hover {
+        color: #5E72eb;
+      }
+      
+      footer {
+      background-color: #5E72eb;
+      color: #ffffff;
+      text-align: center;
+      padding: 5px; 
+    	}
+      
+      p a{
+        color: white;
+      }
+      
+      p a:hover {
+        color: yellow;
+      }
+      
+      #intro{
+        background-color: #FFFFFF;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        
+      }
+      
+    </style>
+  </head>
+
+
+
+  <body>
+    <div id="nav">
+      <img src="claras-cats.png" style="width: 350px;" alt="Clara's Cats">
+      <ul>
+        <li><a href="https://netnet.studio/?gh=c26xu/228-final">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">JOURNEY</a></li>
+        <li><a href="">GALLERY</a></li>
+      </ul>
+    </div>
+
+    <!--
+    Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+    Author: w3schools.com
+    Name: Automatic slideshow
+    Description: Displays an automatic (animated) slideshow.
+    Date retrieved: Dec. 11, 2023
+    -->
+
+    <!-- Copied code starts -->
+
+    <div class="w3-content w3-section">
+      <img class="mySlides" src="slideshow1.JPG" alt="Toby Slide 1" style="width:100%">
+      <img class="mySlides" src="slideshow2.JPG" alt="Stewie Slide 1" style="width:100%">
+      <img class="mySlides" src="slideshow3.JPG" alt="Toby Slide 2" style="width:100%">
+      <img class="mySlides" src="slideshow4.JPG" alt="Stewie Slide 2" style="width:100%">
+      <img class="mySlides" src="slideshow5.JPG" alt="Toby Slide 3" style="width:100%">
+    </div>
+
+    <script>
+      let myIndex = 0;
+      carousel();
+
+      function carousel() {
+        let i;
+        let x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <!-- Copied code ends -->
+		<div id="intro">
+      <h1>Welcome to <span style="color:#5E72eb;font-weight:bold">Clara's Cats!</span></h1>
+      <h2>
+        
+        Clara's Cats is all about my 2 cats, <span style="color:#5E72eb;font-weight:bold">Toby</span> and <span style="color:#5E72eb;font-weight:bold">Stewie</span>. 
+      </h2>
+      <p>
+        On this website, you can find information about them, the story of how I got them, and find many cute and funny pictures!
+      </p>
+    </div>
+    
+
+    
+    <footer>
+      <p>Contact me: <a href="mailto:c26xu@uwaterloo.ca">c26xu@uwaterloo.ca</a></p>
+    </footer>
+    
+  </body>
+</html>
